@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cool+Santa&family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(36, 36, 36);
+  color: #f0f0f0;
+  min-height: 100vh;
+}
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  background: pink;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(rgb(43, 4, 70), rgb(157, 89, 137));
+  box-shadow: rgb(255, 225, 180) 0px 1px 25px;
+  border-radius: 10px;
+}
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  background: linear-gradient(rgb(224, 134, 149), purple);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 1px 25px purple;
+}
+
+.header {
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  border: 4px solid pink;
+}
+
+h1, h2 {
+  letter-spacing: 10px;  
+  font-family: 'Cool Santa', cursive;
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: pink;
+  text-shadow: 0px 1px 25px pink;
+}
+p {
+  font-size: 1em;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-info p, .contact-info a {
+  color: white;
+  font-size: 1em;
+}
+
+.contact-info a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+button {
+  background: linear-gradient(to right, #ffd8fc, #ffb5c4);
+  color: purple;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  box-shadow: 0px 1px 25px rgb(255, 191, 255);
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.content {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.content section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.content section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 20px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.social-link {
+  color: white;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: pink;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    margin: 10px 0;
+  }
+}

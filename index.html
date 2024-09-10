@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+
+  <!--==== CSS ====-->
+  <link rel="stylesheet" href="style.css">
+  
+  <!--==== GOOGLE FONTS ====-->
+  <link href="https://fonts.googleapis.com/css2?family=Cool+Santa&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!--==== FONTSAWESOME ====-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!--=============== SCROLL REVEAL CSS ===============-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+  <div class="container" data-aos="fade" data-aos-duration="2000" data-aos-delay="400">
+    <div class="header" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
+      <img src="icon.jpg" alt="Profile Image" class="profile-img">
+      <h1>Alishbah</h1>
+      <p>Father's Name: M. Kamran</p>
+      <p>Date of Birth: October 7, 2004</p>
+      <p>Nationality: Pakistan</p>
+      <p>Religion: Islam</p>
+    </div>
+
+    <div class="contact-info" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
+      <h2>Contact</h2>
+      <p>Phone: +123456789</p>
+      <p>Email: email@example.com</p>
+      <p>Social: 
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+      </p>
+    </div>
+
+    <div class="menu">
+      <button id="skillsBtn">Skills</button>
+      <button id="educationBtn">Education</button>
+      <button id="experienceBtn">Experience</button>
+    </div>
+
+    <div class="content">
+      <section id="skills" class="hidden">
+        <h2>Skills</h2>
+        <ul>
+          <li>Web Development</li>
+          <li>JavaScript</li>
+          <li>CSS3 & HTML5</li>
+        </ul>
+        <hr>
+      </section>
+
+      <section id="education" class="hidden">
+        <h2>Education</h2>
+        <ul>
+          <li>Inter - Bamm Pechs - Present</li>
+          <li>Matriculation - BSEK - 2022</li>
+        </ul>
+        <hr>
+      </section>
+
+      <section id="experience" class="hidden">
+        <h2>Experience</h2>
+        <ul>
+          <li>Web Developer at XYZ Corp (20##-20##)</li>
+          <li>Frontend Developer at ABC Inc (20##-Present)</li>
+        </ul>
+        <hr>
+      </section>
+    </div>
+  </div>
+
+  <!--==== JS ====-->
+  <script src="script.js"></script>
+
+  <!--=============== SCROLL REVEAL JS ===============-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+    </script>
+</body>
+</html>
